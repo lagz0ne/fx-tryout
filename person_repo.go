@@ -49,6 +49,6 @@ func BuildInputPersonHandler(repo PersonRepo) HandlerDef {
 var person = fx.Module("person",
 	fx.Provide(
 		BuildPersonRepo,
-		fx.Annotate(BuildInputPersonHandler, fx.ResultTags(`group:"handlers"`)),
+		// fx.Annotate(BuildInputPersonHandler, fx.ResultTags(`group:"handlers"`)),
 	),
 )
